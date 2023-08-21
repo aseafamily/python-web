@@ -11,6 +11,11 @@ def index():
    print('Request for index page received')
    return render_template('index.html')
 
+@app.route('/style.css')
+def style():
+   print('Request for style.css received')
+   return render_template('style.css')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
