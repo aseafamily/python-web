@@ -22,6 +22,10 @@ py -m venv .venv
 .venv\scripts\activate
 pip install -r requirements.txt # if needed
 flask run
+
+or 
+
+python app.py
 ```
 ### Public URL
 
